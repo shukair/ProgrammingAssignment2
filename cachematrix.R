@@ -36,7 +36,7 @@ cacheSolve <- function(x, ...) {
   m <- x$getinv()
  
    if(!is.null(m)) {
-    message("getting cached data")
+    message("getting cached data")# indicates if cache is used
     return(m)
   }else {
     message("inverse needs computation")
